@@ -18,6 +18,7 @@ button background color: #F5F4FA;
   --sec-logo-color: #000000;
   --footer-address-color: rgba(255, 255, 255, 0.6);
   --border-main-color: #eeeeee;
+  --hero-gradient-color: rgba(47, 48, 58, 0.4);
 }
 p,
 h1,
@@ -110,12 +111,23 @@ body {
 .header-contacts {
   display: flex;
   margin-left: auto;
+  align-items: baseline;
 }
 .contacts-item {
   display: inline-block;
 }
 .contacts-item:not(:last-child) {
   margin-right: 50px;
+}
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.phone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 .header-tel,
 .header-mail {
@@ -142,9 +154,20 @@ body {
   padding-top: 94px;
 }
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: #2f303a;
+  background: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/ws-hero.jpg) no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-container {
   text-align: center;
