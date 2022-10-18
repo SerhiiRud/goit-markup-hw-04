@@ -325,7 +325,7 @@ body {
 }
 .clients-list-item {
   height: 92px;
-  width: calc((100%-150px) / 6);
+  width: calc((100% - 150px) / 6);
 }
 .clients-link {
   width: 100%;
