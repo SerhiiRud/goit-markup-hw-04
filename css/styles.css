@@ -321,6 +321,7 @@ body {
 .clients-list {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 .clients-list-item {
   height: 92px;
